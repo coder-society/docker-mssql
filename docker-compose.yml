@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  db:
+    build: .
+    environment:
+      SA_PASSWORD: SystemAdminPassword12345
+      DB_DATABASE: dev
+      DB_USERNAME: admin
+      DB_PASSWORD: AdminPassword12345
+    ports:
+      - "1433:1433"
